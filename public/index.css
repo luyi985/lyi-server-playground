@@ -1,0 +1,31 @@
+html {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.box {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.btn-group {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+button {
+    padding: 10px;
+    white-space: nowrap;
+    flex-basis: 100%;
+}
+
+textarea {
+    flex-basis: 100%;
+    padding: 10px;
+    font-size: 1rem;
+}
