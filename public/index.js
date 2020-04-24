@@ -12,11 +12,15 @@ const errorHandling = (e) => {
 		'click',
 		(e) => {
 			fetch(`${API_ROOT}${endpoint}`, {
+				headers: {
+					Accept: 'application/json',
+				},
 				credentials: 'include',
 			})
 				.then((data) => {
-					console.log(data);
-					jsCorsGetResult.innerHTML = JSON.stringify(data);
+					console.log(document.cookie);
+					document.cookie ="aa=dsdsdqdqwqwd"
+					data.json().then((d) => (jsCorsGetResult.innerHTML = JSON.stringify(d)));
 				})
 				.catch(errorHandling);
 		},
